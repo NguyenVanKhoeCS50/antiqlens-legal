@@ -16,26 +16,29 @@
 </head>
 <body>
 <h1><span class="accent">AntiqLens</span> — Privacy Policy</h1>
-<p class="meta">Last updated: June 16, 2026</p>
+<p class="meta">Last updated: October 7, 2026</p>
 
 <p>AntiqLens ("the app", "we") is an AI-powered antique identifier. This policy explains what
-data the app handles, where it goes, and why. By using AntiqLens you agree to this policy.</p>
+data the app handles, where it goes, and why. This notice does not replace your choices: optional AI processing, advertising consent, tracking and device permissions are requested separately where applicable.</p>
 
 <h2>1. Accounts and how we identify you</h2>
 <p>You can start using AntiqLens without creating an account — a private, anonymous guest profile
 is created for you automatically so your scans and collection can be saved. You may later sign in
 (for example with Google) to back up and sync your collection across devices; when you do, your
 existing guest data is linked to that account. We store an account identifier and, if you sign in,
-the email address provided by your sign-in provider.</p>
+the display name, profile image and email address provided by your sign-in provider. The sign-in provider may also process device, network and service-usage information to authenticate you and protect its service.</p>
 
-<h2>2. Photos you scan</h2>
-<p>When you scan an item, the photo is sent over an encrypted connection to our server and forwarded
-to a third-party AI provider (such as OpenAI and/or Anthropic) to generate the identification and
-value estimate. Regarding these scan images:</p>
+<h2>2. Photos, AI analysis and conversations</h2>
+<p>Before new AI processing on iOS, we ask for your permission. The photos you select, messages,
+relevant item details and language are sent over an encrypted connection through Google Firebase
+and our cloud functions to OpenAI and/or Anthropic to identify objects and answer questions.
+Photos may also be processed by Google Cloud Vision to match images and find relevant web references.
+Do not include personal, confidential or sensitive information in photos or messages.</p>
 <ul>
-  <li>The full-resolution image used purely for AI analysis is processed in memory and is <strong>not</strong> stored on our servers.</li>
-  <li>If you save an item to your collection, a compressed display image and thumbnail are stored in our cloud storage (Firebase) so the item appears in your collection across your devices.</li>
-  <li>Scan content is not used to train AI models and is not sold.</li>
+  <li>The analysis image is processed in memory by our scan service and is not uploaded to our image storage as an original analysis file. AI providers process requests under their own service terms and retention policies.</li>
+  <li>Compressed display images and thumbnails may be uploaded during scanning. Saved images and identification results are associated with your account in Firebase so your collection can sync across devices.</li>
+  <li>Helper messages and responses are saved as private conversations associated with your account. You can delete conversations inside the app.</li>
+  <li>On iOS, you may decline AI processing and continue browsing saved items and guides. Withdraw permission for future AI requests from Profile &rarr; AI &amp; photo privacy. Withdrawing permission does not automatically delete previously saved content or undo completed requests; use the relevant delete controls or contact us.</li>
 </ul>
 
 <h2>3. Collection and scan data</h2>
@@ -56,26 +59,44 @@ recorded against your account so your Pro features are available across your dev
 
 <h2>6. Permissions</h2>
 <ul>
-  <li><strong>Camera</strong> — used to photograph items for scanning. Required for the core feature.</li>
-  <li><strong>Photos (optional)</strong> — if you choose to scan an existing photo instead of using the camera.</li>
+  <li><strong>Camera (optional)</strong> — requested when you choose to enable the camera to photograph an object. You can instead choose an existing photo.</li>
+  <li><strong>Selected photos (optional)</strong> — on iOS, the system photo picker shares only the images you choose; the app does not need full-library access.</li>
   <li><strong>Notifications (optional)</strong> — used for price alerts and updates; the app works without it.</li>
 </ul>
 
 <h2>7. Service providers</h2>
-<p>We use Google Firebase (authentication, database, storage, cloud functions, and messaging) to
-run the app, and third-party AI providers (such as OpenAI and Anthropic) to analyze scans. These
-providers process data on our behalf under their own security and privacy commitments.</p>
+<p>Google Firebase provides authentication, database, image storage, cloud functions and optional
+push messaging. OpenAI and/or Anthropic process AI requests; Google Cloud Vision provides image
+matching. Google AdMob and the Google User Messaging Platform provide advertising and privacy choices.
+Apple and Google process store purchases; we receive purchase verification and subscription information,
+not payment card details. These providers may process data outside your country, including outside the
+European Economic Area, under their applicable privacy terms and transfer arrangements.</p>
+<p>Provider information: <a href="https://firebase.google.com/support/privacy">Firebase</a>,
+<a href="https://openai.com/policies/privacy-policy/">OpenAI</a>,
+<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>,
+<a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud</a>, and
+<a href="https://policies.google.com/technologies/ads">Google advertising</a>.</p>
 
-<h2>8. Analytics &amp; tracking</h2>
-<p>The app does not include third-party advertising SDKs. We may use privacy-respecting,
-aggregated diagnostics to keep the service reliable.</p>
+<h2>8. Advertising, consent and tracking</h2>
+<p>The free app includes Google AdMob advertising. AdMob may process IP-derived approximate location,
+device identifiers, ad interactions, usage information and diagnostics to deliver and measure ads,
+prevent fraud and maintain its services. We do not send your scan photos, collection notes or private
+Helper messages to AdMob as advertising content.</p>
+<p>Where required, including the EEA, United Kingdom and Switzerland, Google User Messaging Platform
+presents the applicable privacy message. You can revisit the available choices in Profile through the
+advertising privacy options entry. The app requests ads only when that platform permits it. Declining
+personalization may result in non-personalized or limited ads, or no ads, depending on the applicable choices.</p>
+<p>On iOS, permission to track through Apple's App Tracking Transparency prompt is separate from
+regional advertising consent. You can decline tracking and still use the app. Without tracking permission,
+the iOS app requests non-personalized ads and does not enable the publisher first-party identifier.
+You can change tracking permission in iOS Settings. Firebase Analytics collection is deactivated in
+the updated iOS app; essential service logs and the advertising SDK's own diagnostics may still be processed.</p>
 
 <h2>9. Data retention &amp; your rights</h2>
 <p>Your collection data is retained while your account is active. You can delete saved items at any
-time, or permanently delete your entire account from <em>Profile &rarr; Delete account</em> inside
-the app. Deleting your account immediately and irreversibly removes your account, saved items,
-albums, and stored images from our systems. Depending on your region (e.g. GDPR / CCPA) you may also
-have rights to access, correct, or export your data; email us to exercise them.</p>
+time in the app. Use Profile &rarr; Delete account to request deletion of your account and associated app data, or contact us for help. Deletion does not cancel an App Store or Google Play subscription; manage that separately in the store. Provider security logs and backups may remain for applicable retention periods. Depending on your
+region (e.g. GDPR / CCPA) you may have rights to access, correct, export, or delete your data; email us to
+exercise them.</p>
 
 <h2>10. Children</h2>
 <p>AntiqLens is not directed at children under 13 and does not knowingly collect data from them.</p>
